@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/LinearLayoutCard">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    style="@style/ImageIconStyle"
+                    app:srcCompat="@drawable/steven" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/TextViewStyle"
+                    android:text="Steven Universe"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutCard">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    style="@style/ImageIconStyle"
+                    app:srcCompat="@drawable/peridot" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/TextViewStyle"
+                    android:text="Peridot"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutCard">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    style="@style/ImageIconStyle"
+                    app:srcCompat="@drawable/connie" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/TextViewStyle"
+                    android:text="Connie"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="184dp"
+                android:layout_height="115dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/colorGrass"
+                app:contentPadding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Peridot"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="casual" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text='"Earth is our home now. Isnt it worth fighting for?"'
+                        app:fontFamily="cursive" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="186dp"
+                android:layout_height="173dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorCoral"
+                app:contentPadding="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Garnet"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="casual" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text='"There are millions of possibilities for the future. But it is up to you to choose which becomes reality""'
+                        android:textSize="18sp"
+                        app:fontFamily="cursive" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="157dp"
+                android:layout_height="79dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toTopOf="@+id/cardView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/su" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="157dp"
+                android:layout_height="206dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="171dp"
+                    android:layout_height="216dp"
+                    android:background="@color/colorYellow"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="107dp"
+                        app:cardBackgroundColor="@color/colorYellow">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="138dp"
+                            android:layout_height="94dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/garnet" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <MultiAutoCompleteTextView
+                        android:id="@+id/multiAutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pearl"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:fontFamily="casual" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="61dp"
+                            android:text="Reality is an illusion, the universe is a hologram."
+                            android:textSize="12sp"
+                            app:fontFamily="cursive" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
